@@ -15,7 +15,7 @@ function Header() {
     }
 
     return (
-        <div className="lg-w-[80%] w-[90%] flex flex-col justify-between text-center m-auto ">
+        <div className="w-[90%] flex flex-col justify-between text-center m-auto mb-8">
             <div className="w-full text-left my-4">
                 <span className="text-5xl text-[black] font-bold tracking-tighter">MOV<FontAwesomeIcon className="text-[#17a1b7] ml-[4px]" icon={faFilm} />E</span>
             </div>

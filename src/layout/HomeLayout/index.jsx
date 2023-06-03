@@ -1,6 +1,6 @@
 import Header from "../../pages/Components/Header";
 
-function HomeLayout( {children}  ) {
+function HomeLayout({ children }) {
     return (
         <div className="flex flex-col">
             <Header />
