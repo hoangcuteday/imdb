@@ -18,8 +18,8 @@ function NowPlaying() {
 
     return (
         <div className="flex flex-col h-max">
-            <div className="py-2">
-                <p className="text-3xl text-black font-semibold">Now Playing</p>
+            <div className="pb-2">
+                <p className="text-3xl text-black font-semibold pb-2">Now Playing</p>
                 <div className="py-2">
                     <button className="py-1 px-3 bg-white mr-3 rounded-md border-[#7adeee] border-[1px]">Movies</button>
                     <button className="py-1 px-3 bg-white mr-3 rounded-md border-[#7adeee] border-[1px]">TV shows</button>

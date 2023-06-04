@@ -1,0 +1,9 @@
+.wrapper{
+    &:hover{
+        .text{
+            color: #40c1d5;
+        }
+
+        background-color: #f8f7f7;
+    }
+}
