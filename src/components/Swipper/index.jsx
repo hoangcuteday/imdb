@@ -4,13 +4,14 @@ import Carousel from "react-material-ui-carousel";
 
 function Swipper() {
     const idFilm = [
-        1119173,
-        603692,
-        385687,
         502356,
-        493529,
-        640146,
-        667538,
+        385687,
+        447277,
+        840326,
+        569094,
+        713704,
+        605886,
+        552688
     ];
 
 

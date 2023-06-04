@@ -1,0 +1,22 @@
+.wrapper {
+    max-height: 55rem;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-0.5rem);
+
+        .btn {
+            display: block;
+
+            &:hover {
+                color: white;
+                background-color: #7adeee;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .btn {
+        transition: all .5s;
+    }
+}

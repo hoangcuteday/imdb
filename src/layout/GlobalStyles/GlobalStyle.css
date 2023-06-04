@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #f3f9fe;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(320deg,  #7adeee, #f3f9fe);
+    border-radius: 10px;
 }
