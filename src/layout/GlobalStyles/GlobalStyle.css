@@ -14,3 +14,8 @@ body {
     background: linear-gradient(320deg,  #7adeee, #f3f9fe);
     border-radius: 10px;
 }
+
+.bg-footer{
+    padding-bottom: 5rem;
+    background: linear-gradient(0deg,#7adeee 0,rgba(122,222,238,0) 100%);
+}

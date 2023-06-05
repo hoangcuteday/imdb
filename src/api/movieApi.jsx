@@ -4,8 +4,11 @@ const getDataFilm = {
     getOne(id) {
         return axiosClient.get(`/movie/${id}`);
     },
-    getNowPlay() {
-        return axiosClient.get('/movie/now_playing');
+    getPopularMovie() {
+        return axiosClient.get('/movie/popular');
+    },
+    getPopularTv(){
+        return axiosClient.get('/tv/popular');
     },
     getTopMoive() {
         return axiosClient.get('/movie/top_rated');

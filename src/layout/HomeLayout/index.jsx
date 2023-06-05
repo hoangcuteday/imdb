@@ -1,3 +1,4 @@
+import Footer from "../../pages/Components/Footer";
 import Header from "../../pages/Components/Header";
 
 function HomeLayout({ children }) {
@@ -5,6 +6,7 @@ function HomeLayout({ children }) {
         <div className="flex flex-col">
             <Header />
             {children}
+            <Footer />
         </div>
     );
 }

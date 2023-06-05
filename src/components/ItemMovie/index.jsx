@@ -20,8 +20,8 @@ function ItemMovie(props) {
                 </div>
                 <div className="h-[30%] text-left px-4">
                     <div className="flex-col flex justify-between h-full w-full">
-                        <span className="pt-4 pb-6 text-black font-bold text-[1rem]">{film.original_title}</span>
-                        <p className="mb-3 text-gray-400 border-t-[1px] border-[#f3f9fe]">Movie(2023)</p>
+                        <span className="pt-4 pb-6 text-black font-bold text-[1rem]">{film?.title || film?.name}</span>
+                        <p className="mb-3 text-gray-400 border-t-[1px] border-[#f3f9fe]">{film?.title && "Moive " || "TV show "}(2023)</p>
                     </div>
                 </div>
             </div>
