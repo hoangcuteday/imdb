@@ -1,0 +1,10 @@
+.wrapper{
+
+    &:hover{
+        background-color: #f9f9f9;
+
+        span:first-child {
+            color: #17a2b8;
+        }
+    }
+}

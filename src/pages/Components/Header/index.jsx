@@ -1,7 +1,8 @@
-import { faFilm, faList, faMagnifyingGlass, faTvAlt, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faFilm, faList, faTvAlt, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useRef } from "react";
+import Search from "../../../components/Search";
 
 
 
@@ -33,12 +34,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-                <div className="flex-1 w-full">
-                    <div className="flex justify-center items-center text-center w-full bg-white rounded-md drop-shadow-2xl">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} className="hover:cursor-pointer px-4 text-xl text-[gray]" />
-                        <input className="flex-1 py-2 border-none outline-none rounded-md" placeholder="Search......" />
-                    </div>
-                </div>
+               <Search />
             </div>
         </div>
     );

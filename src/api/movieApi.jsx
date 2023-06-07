@@ -15,6 +15,9 @@ const getDataFilm = {
     },
     getTopTvShow() {
         return axiosClient.get('/tv/top_rated');
+    },
+    getSearch(params) {
+        return axiosClient.get('/search/multi', {params});
     }
 };
 

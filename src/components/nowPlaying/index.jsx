@@ -19,7 +19,6 @@ function NowPlaying() {
 
     useEffect(() => {
         btnmRef.current.classList.add("bg-white", "border-[#7adeee]", "border-[1px]");
-        console.log(1);
         const fetchFilm = async () => {
             const data = await getDataFilm.getPopularMovie();
             const data1 = await getDataFilm.getPopularTv();
