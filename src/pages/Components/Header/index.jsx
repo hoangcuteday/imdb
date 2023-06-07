@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useRef } from "react";
 import Search from "../../../components/Search";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,7 +19,9 @@ function Header() {
     return (
         <div className="w-[90%] flex flex-col justify-between text-center m-auto mb-8">
             <div className="w-full text-left my-4">
-                <span className="text-5xl text-[black] font-bold tracking-tighter">MOV<FontAwesomeIcon className="text-[#17a1b7] ml-[4px]" icon={faFilm} />E</span>
+                <Link to={"/"}>
+                    <span className="text-5xl text-[black] font-bold tracking-tighter cursor-pointer">MOV<FontAwesomeIcon className="text-[#17a1b7] ml-[4px]" icon={faFilm} />E</span>
+                </Link>
             </div>
             <div className="w-full flex justify-between items-center text-center ml-1">
                 <div className="text-left mr-5 relative">
@@ -34,7 +37,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-               <Search />
+                <Search />
             </div>
         </div>
     );

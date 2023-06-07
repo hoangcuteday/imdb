@@ -4,6 +4,9 @@ const getDataFilm = {
     getOne(id) {
         return axiosClient.get(`/movie/${id}`);
     },
+    getOnetv(id){
+        return axiosClient.get(`/tv/${id}`);
+    },
     getPopularMovie() {
         return axiosClient.get('/movie/popular');
     },

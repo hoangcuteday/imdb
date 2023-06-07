@@ -22,7 +22,7 @@ function NowPlaying() {
         const fetchFilm = async () => {
             const data = await getDataFilm.getPopularMovie();
             const data1 = await getDataFilm.getPopularTv();
- 
+
             setTv(() => data1.data.results);
             setFilm(() => data.data.results);
         }
@@ -67,7 +67,7 @@ function NowPlaying() {
                 {
                     tv.map((value, index) => {
                         return (
-                            <ItemMovie key={index} film={value} />
+                                <ItemMovie key={index} film={value} />
                         )
 
                     })
