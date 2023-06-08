@@ -9,7 +9,7 @@ function Cast({ cast }) {
                     cast.map((value, index) => {
                         return (
                             <div key={index} className="w-[20%] h-[40%] m-4 flex flex-col">
-                                <img className="lg:w-[60%] h-[50%] w-[100%] rounded-2xl" src={`https://image.tmdb.org/t/p/original/${value?.profile_path}`} />
+                                <img className="lg:w-[60%]  w-[100%] rounded-2xl" src={value.profile_path ? `https://image.tmdb.org/t/p/original/${value?.profile_path}` : "https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg"} />
                                 <div className="mt-1">
                                     <h1 className="lg:text-base text-sm text-black font-medium">{value?.name}</h1>
                                 </div>

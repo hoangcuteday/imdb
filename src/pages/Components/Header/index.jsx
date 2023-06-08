@@ -25,8 +25,8 @@ function Header() {
             </div>
             <div className="w-full flex justify-between items-center text-center ml-1">
                 <div className="text-left mr-5 relative">
-                    <FontAwesomeIcon onClick={handleIcon} icon={faList} className="text-3xl hover:text-[#17a1b7] hover:cursor-pointer" />
-                    <ul ref={ulRef} className="absolute z-10 w-max hidden text-[black] font-sans py-2 mt-2 rounded-xl bg-[white] drop-shadow-2xl">
+                    <FontAwesomeIcon  onClick={handleIcon} icon={faList} className="text-3xl hover:text-[#17a1b7] hover:cursor-pointer" />
+                    <ul  ref={ulRef} className="absolute z-10 w-max hidden text-[black] font-sans py-2 mt-2 rounded-xl bg-[white] drop-shadow-2xl">
                         <li className="p-2 my-2 mx-3 hover:cursor-pointer hover:bg-[#7adeee] rounded-2xl">
                             <FontAwesomeIcon icon={faVideoCamera} className="mx-2  text-[#F0E68C]" />
                             <span className="font-bold">Movies</span>

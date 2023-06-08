@@ -13,7 +13,7 @@ function ItemTop(props) {
 
     return (
         <Link to={(film?.title) ? `/movie/${film.id}` : `/tv/${film.id}`}>
-            <div className={cx("wrapper", "flex p-4 border-[#7adeee] border-b-[1px] cursor-pointer max-h-32")}>
+            <div onClick={() => { window.scrollTo(0, 0) }} className={cx("wrapper", "flex p-4 border-[#7adeee] border-b-[1px] cursor-pointer max-h-32")}>
                 <img src={`https://image.tmdb.org/t/p/original/${film.poster_path}`} className="lg:w-[20%] w-[6%]" />
                 <div className="w-[80%] ml-2 flex justify-between flex-col my-1">
                     <span className={cx("text", "text-sm font-bold")}>{film?.title || film?.name}</span>

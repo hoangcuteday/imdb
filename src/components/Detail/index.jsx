@@ -14,7 +14,7 @@ function Detail(props) {
             </div>
             <div className="flex flex-col flex-1 text-left lg:mt-0 mt-4">
                 <span className="lg:text-4xl text-left text-2xl text-[#30b2c6] font-medium">{film?.title}</span>
-                <a href="#trailer"><button className="border-white border-[1.5px]  lg:w-[20%] w-[50%] bg-[#b9b9ff33] hover:bg-[#24246b33] rounded-2xl py-2 mt-4 text-2xl text-black"><FontAwesomeIcon className="text-base mx-2" icon={faTrailer}/>Trailer</button></a>
+                <a className="w-max" href="#trailer"><button className="w-100%  border-white border-[1.5px]  bg-[#b9b9ff33] hover:bg-[#24246b33] rounded-2xl py-3 px-8 mt-4 text-2xl text-black"><FontAwesomeIcon className="text-base mx-2" icon={faTrailer}/>Trailer</button></a>
                 <div className="lg:w-[70%] mt-2">
                     <span className="text-xl font-normal text-black">Storyline:</span>
                     <p className="mt-2 text-base font-medium">{film?.overview}</p>
