@@ -13,7 +13,7 @@ function ItemMovie(props) {
 
     return (
         <Link to={(film?.title) ? `/movie/${film.id}` : `/tv/${film.id}`}>
-            <div className={cx("wrapper", "items-center text-center cursor-pointer")}>
+            <div className={cx("wrapper", "items-center text-center cursor-pointer sm:max-h-[55rem]")}>
                 <div className="flex-col flex bg-white drop-shadow-2xl rounded-2xl">
                     <div className="h-[70%] relative">
                         <span className="absolute text-black text-sm top-[2%] left-[4%] px-1 rounded bg-[#7adeee]">HD</span>

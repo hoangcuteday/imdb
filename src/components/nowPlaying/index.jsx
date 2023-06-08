@@ -53,7 +53,7 @@ function NowPlaying() {
                     <button ref={btntRef} onClick={handleBtnT} className={cx("py-1 px-3 hover:bg-white mr-3 rounded-md hover:border-[#7adeee] hover:border-[1px]")}>TV shows</button>
                 </div>
             </div>
-            <div ref={mRef} className="flex-1 grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-6 w-full h-max">
+            <div ref={mRef} className="flex-1 grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-6 w-full">
                 {
                     film.map((value, index) => {
                         return (

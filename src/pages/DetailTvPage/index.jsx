@@ -16,7 +16,7 @@ function DetailTvPage() {
         fetchFilm();
     }, [id])
 
-    return(
+    return (
         <img src={`https://image.tmdb.org/t/p/original/${film.backdrop_path}`}></img>
     )
 }

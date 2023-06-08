@@ -21,6 +21,9 @@ const getDataFilm = {
     },
     getSearch(params) {
         return axiosClient.get('/search/multi', {params});
+    },
+    getCastMovie(id) {
+        return axiosClient.get(`/movie/${id}/credits`);
     }
 };
 
