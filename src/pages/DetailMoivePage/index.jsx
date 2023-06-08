@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getDataFilm } from "../../api/movieApi";
 import Detail from "../../components/Detail";
 import Cast from "../../components/Detail/Cast";
+import Trailer from "../../components/Trailer";
 
 function DetailMoviePage() {
 
@@ -10,7 +11,7 @@ function DetailMoviePage() {
     const [film, setFilm] = useState({});
     const [cast, setCast] = useState([]);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const fetchFilm = async () => {
             const data = await getDataFilm.getOne(id);
             const data1 = await getDataFilm.getCastMovie(id);
@@ -23,8 +24,9 @@ function DetailMoviePage() {
 
     return (
         <div className="w-[90%] m-auto flex flex-col mt-4">
-            <Detail film={film}/>
+            <Detail film={film} />
             <Cast cast={cast} />
+            <Trailer id={film?.videos?.results[2]?.key} />
         </div>
     )
 }

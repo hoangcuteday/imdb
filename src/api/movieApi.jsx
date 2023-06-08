@@ -2,7 +2,11 @@ import axiosClient from "./axoisClient";
 
 const getDataFilm = {
     getOne(id) {
-        return axiosClient.get(`/movie/${id}`);
+        return axiosClient.get(`/movie/${id}`,{
+            params: {
+                append_to_response: "videos"
+            }
+        });
     },
     getOnetv(id){
         return axiosClient.get(`/tv/${id}`);
