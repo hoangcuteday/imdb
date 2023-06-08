@@ -3,7 +3,7 @@ function Cast({ cast }) {
 
     return (
         <>
-            <h1 className="px-12 mt-10 mb-4 text-5xl font-semibold text-gray-600">Cast</h1>
+            <h1 className="px-12 mt-10 mb-4 lg:text-5xl sm:text-2xl text-xl font-semibold text-gray-600">Cast</h1>
             <div className="flex flex-row flex-wrap px-12 ">
                 {
                     cast.map((value, index) => {
