@@ -30,7 +30,7 @@ function ItemSwipper({ id }) {
             <span className="absolute top-[-1%] text-[white] right-[0] rounded-2xl rounded-br-none py-1 px-5 bg-[#ece92c]">{parseInt(film.vote_average).toFixed(1)}<FontAwesomeIcon className="ml-2" icon={faStar} /></span>
             <div className="absolute bottom-[20%] left-[5%] text-[white]">
             <Link to={`/movie/${film.id}`}>
-                <button className="py-2 px-5 rounded-2xl border-white border-[1.5px] hover:bg-[white] hover:text-[black]">Watch Now</button>
+                <button className="text-base py-2 px-2 rounded-2xl border-white border-[1.5px] hover:bg-[white] hover:text-[black]">Watch Now</button>
             </Link>
             </div>
         </div>
